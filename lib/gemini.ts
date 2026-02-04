@@ -4,6 +4,6 @@ const apiKey = process.env.GEMINI_API_KEY;
 
 const genAI = new GoogleGenerativeAI(apiKey || "dummy-key");
 
-const MODEL_NAME = "gemini-3-flash";
+const MODEL_NAME = "gemini-3-flash-preview";
 
 export const model = genAI.getGenerativeModel({ model: MODEL_NAME });
