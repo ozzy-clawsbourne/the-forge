@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 interface FormatCardProps {
   title: string;
   content: string | string[];
-  type: "x" | "newsletter" | "linkedin" | "sora";
+  type: "x" | "newsletter" | "facebook" | "sora";
 }
 
 export default function FormatCard({ title, content, type }: FormatCardProps) {

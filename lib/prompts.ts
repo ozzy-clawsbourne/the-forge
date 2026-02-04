@@ -15,7 +15,7 @@ Given a piece of content, extract the core insight and generate:
 - Include a key quote or stat callout
 - End with a question or CTA to drive replies
 
-3. LINKEDIN POST
+3. FACEBOOK POST
 - Professional but not stuffy
 - Use paragraph breaks (2-3 sentences each)
 - Include a hook in first line
@@ -35,7 +35,7 @@ Return the response in JSON format:
   "insight": "Core thesis extracted",
   "xThread": ["tweet1", "tweet2", ...],
   "newsletter": "Full newsletter section content...",
-  "linkedin": "LinkedIn post content...",
+  "facebook": "Facebook post content...",
   "soraPrompt": "Sora 2 video prompt content..."
 }
 `;

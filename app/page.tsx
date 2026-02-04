@@ -13,7 +13,7 @@ interface ForgeResult {
   insight: string;
   xThread: string[];
   newsletter: string;
-  linkedin: string;
+  facebook: string;
   soraPrompt: string;
 }
 
@@ -235,7 +235,7 @@ export default function Home() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <FormatCard title="X Thread" content={result.xThread} type="x" />
-                  <FormatCard title="LinkedIn" content={result.linkedin} type="linkedin" />
+                  <FormatCard title="Facebook" content={result.facebook} type="facebook" />
                   <FormatCard title="Newsletter" content={result.newsletter} type="newsletter" />
                   <FormatCard title="Sora Prompt" content={result.soraPrompt || (result as any).videoScript || ""} type="sora" />
                 </div>
