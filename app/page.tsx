@@ -14,7 +14,7 @@ interface ForgeResult {
   xThread: string[];
   newsletter: string;
   linkedin: string;
-  videoScript: string;
+  soraPrompt: string;
 }
 
 export default function Home() {
@@ -176,7 +176,7 @@ export default function Home() {
                 <FormatCard title="X Thread" content={result.xThread} type="x" />
                 <FormatCard title="LinkedIn" content={result.linkedin} type="linkedin" />
                 <FormatCard title="Newsletter" content={result.newsletter} type="newsletter" />
-                <FormatCard title="Video Script" content={result.videoScript} type="video" />
+                <FormatCard title="Sora Prompt" content={result.soraPrompt || (result as any).videoScript || ""} type="sora" />
               </div>
             </motion.div>
           ) : (

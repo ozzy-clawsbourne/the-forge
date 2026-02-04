@@ -21,11 +21,14 @@ Given a piece of content, extract the core insight and generate:
 - Include a hook in first line
 - End with engagement question
 
-4. VIDEO SCRIPT (30-60 seconds)
-- Conversational tone, written for speaking aloud
-- Include [VISUAL: description] cues for B-roll
-- Hook in first 3 seconds
-- Clear takeaway at end
+4. SORA 2 VIDEO PROMPT
+- Cinematic visual description for AI video generation
+- 50-150 words
+- Include: subject, setting, lighting, camera movement, mood
+- Be specific about motion and action
+- Style: Creative, slightly irreverent, visually striking
+- Use metaphors and creative framing for edgy concepts
+- NO dialogue, just visual description
 
 Return the response in JSON format:
 {
@@ -33,6 +36,6 @@ Return the response in JSON format:
   "xThread": ["tweet1", "tweet2", ...],
   "newsletter": "Full newsletter section content...",
   "linkedin": "LinkedIn post content...",
-  "videoScript": "Video script content..."
+  "soraPrompt": "Sora 2 video prompt content..."
 }
 `;
